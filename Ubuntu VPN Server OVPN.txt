@@ -1,0 +1,31 @@
+*you must be root*
+__________________________
+1- update server 
+	
+$-> apt update
+__________________________
+2- install script
+
+$-> sudo snap install easy-openvpn-server
+
+__________________________
+3- get connection file 
+
+$-> sudo easy-openvpn-server show-client default > Client.ovpn
+
+__________________________
+Managing clients
+
+$-> sudo easy-openvpn-server add-client [Client]
+
+$-> sudo easy-openvpn-server show-client [Clinet] > [Client].ovpn
+
+$-> sudo easy-openvpn-server remove-client [Client]
+__________________________
+Changing ports
+
+$-> sudo snap set easy-openvpn-server udp-server.port=[UDP-Port]
+
+$-> sudo snap set easy-openvpn-server tcp-server.port=[TCP-Port]
+
+

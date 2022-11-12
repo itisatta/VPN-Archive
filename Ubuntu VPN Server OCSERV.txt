@@ -1,0 +1,26 @@
+*you must be a root user*
+___________________________________
+1- Update SERVER
+
+$-> apt update
+___________________________________
+2- Install Script
+
+$-> wget -N --no-check-certificate https://raw.githubusercontent.com/sfc9982/AnyConnect-Server/main/ocserv-en.sh
+$-> chmod +x ocserv-en.sh
+
+$-> bash ocserv-en.sh
+
+
+$-> wget -N --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && bash bbr.sh
+
+
+___________________________________
+Change Port:
+
+$-> nano /etc/ocserv/ocserv.conf
+___________________________________
+Manage Service:
+
+$-> bash ocserv-en.sh
+

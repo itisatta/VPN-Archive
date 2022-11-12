@@ -1,0 +1,17 @@
+*You must be root*
+1- Update server
+
+$-> apt update
+
+________________________________
+2- Install script
+
+$-> curl https://get.acme.sh | sh
+$-> bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
+
+_________________________________
+3- Login and create user
+
+http://IP:54321
+username: admin
+password: admin
